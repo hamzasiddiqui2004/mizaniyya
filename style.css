@@ -198,6 +198,10 @@ header {
   background: #0c724f;
 }
 
+#footerText {
+  color: #fff;
+}
+
 /* FOOTER */
 footer {
   background: #0a5e43;
@@ -208,7 +212,7 @@ footer {
 }
 
 footer p a {
-  color: #b5e3cd;
+  color: #00ffae;
   text-decoration: none;
   font-weight: 500;
 }
