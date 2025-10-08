@@ -1,114 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mizaniyya | ميزانية</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image/logo-2.png" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mizaniyya | ميزانية</title>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="image/logo-2.png" type="image/x-icon">
-</head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <img src="image/logo-2.png" alt="Mizaniyya Logo" class="site-logo" />
+        </div>
+        <!-- Logo on right side -->
 
-<body>
-
-  <header>
-    <div class="header-content">
-      <!-- Logo on right side -->
-      <div class="logo-container">
-        <img src="image/logo-2.png" alt="Mizaniyya Logo" class="site-logo" />
-      </div>
-
-      <!-- Title and subtitle -->
-      <div class="title-container">
+        <!-- Title and subtitle -->
+        <!-- <div class="title-container">
         <h1 id="title">Mizaniyya | ميزانية</h1>
         <p id="subtitle" class="tagline">Quick Accounting Services</p>
         <p id="subtitle2">Affordable accounting, tax, and payroll services for businesses.</p>
-      </div>
+      </div> -->
 
-      <!-- Language toggle -->
-      <div class="lang-container">
-        <span class="lang-label">🌐 Language:</span>
-        <button class="lang-toggle" id="langBtn">عربي 🇸🇦</button>
+        <!-- Language toggle -->
+        <div class="lang-container">
+          <span class="lang-label">🌐 Language:</span>
+          <button class="lang-toggle" id="langBtn">عربي 🇸🇦</button>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="banner-section">
-    <div class="banner-border">
-      <h1 class="banner-heading" id="bannerTitle">
-        Affordable Accounting & Cash Flow Reports For Small Business
-      </h1>
-      <p class="banner-text" id="bannerText">
-        Mizaniyya helps small businesses, shops, and restaurants manage their
-        accounts without the stress. All from the comfort of your home —
-        starting from <strong>SAR 500/month</strong>.
+    <section class="banner-section">
+      <div class="banner-border">
+        <h1 class="banner-heading" id="bannerTitle">
+          Affordable Accounting,Tax & Payroll services for businesses
+        </h1>
+        <h2 id="sectionTitle" class="sectionTitle">
+          Get Professional Accountant — Just 500 SAR/month
+        </h2>
+        <p class="banner-text" id="bannerText">
+          Mizaniyya helps small businesses, shops, and restaurants manage their
+          accounts without the stress. All from the comfort of your home —
+          starting from <strong>SAR 500/month</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <i class="fa-solid fa-calculator"></i>
+          <h3 id="card1Title">Accounting</h3>
+          <div class="mini-badge" id="badge1">Only SAR 500</div>
+          <ul id="card1List" class="pricing-list">
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i>
+              Monthly financial statements
+            </li>
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i
+              >Cash flow & expense tracking
+            </li>
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i
+              >Profit & loss reports
+            </li>
+          </ul>
+
+          <a
+            href="https://wa.me/966598905242"
+            target="_blank"
+            class="btn"
+            id="btn1"
+          >
+            Get in 500 SAR/month
+          </a>
+        </div>
+
+        <div class="pricing-card">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <h3 id="card2Title">Tax & Zakat</h3>
+          <div class="mini-badge" id="badge2">Only SAR 500</div>
+          <ul id="card2List">
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i
+              >VAT preparation & filing
+            </li>
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i
+              >Zakat compliance & submission
+            </li>
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i
+              >Official tax submission support
+            </li>
+          </ul>
+          <a
+            href="https://wa.me/966598905242"
+            target="_blank"
+            class="btn"
+            id="btn2"
+          >
+            Get in 500 SAR/month
+          </a>
+        </div>
+
+        <div class="pricing-card">
+          <i class="fa-solid fa-users"></i>
+          <h3 id="card3Title">Payroll</h3>
+          <div class="mini-badge" id="badge3">Only SAR 500</div>
+          <ul id="card3List" class="pricing-list">
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i
+              >Monthly salary calculation
+            </li>
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i
+              >Employee record management
+            </li>
+            <li>
+              <i
+                class="fas fa-star"
+                style="color: #ffd700; margin-right: 6px; font-size: small"
+              ></i
+              >End-of-service benefits setup
+            </li>
+          </ul>
+          <a
+            href="https://wa.me/966598905242"
+            target="_blank"
+            class="btn"
+            id="btn3"
+          >
+            Get in 500 SAR/month
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p id="footerText">
+        📞 Contact us via
+        <a href="https://wa.me/966598905242" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        or email
+        <a href="mailto:info@mizaniyya.com">
+          <i class="fas fa-envelope"></i> info@mizaniyya.com
+        </a>
       </p>
-    </div>
-  </section>
+      <p id="footerText">© 2025 Mizaniyya | All rights reserved.</p>
+    </footer>
+  </body>
 
-  <section>
-    <h2 id="sectionTitle" class="sectionTitle">
-      Get Professional Accountant — Just 500 SAR/month
-    </h2>
-
-    <div class="pricing-container">
-      <div class="pricing-card">
-        <i class="fa-solid fa-calculator"></i>
-        <h3 id="card1Title">Accounting</h3>
-        <div class="mini-badge" id="badge1">Only SAR 500</div>
-        <ul id="card1List" class="pricing-list">
-          <li>Monthly financial statements</li>
-          <li>Cash flow & expense tracking</li>
-          <li>Profit & loss reports</li>
-        </ul>
-        <a href="https://wa.me/966598905242" target="_blank" class="btn" id="btn1">
-          Get in 500 SAR/month
-        </a>
-      </div>
-
-      <div class="pricing-card">
-        <i class="fa-solid fa-file-invoice-dollar"></i>
-        <h3 id="card2Title">Tax & Zakat</h3>
-        <div class="mini-badge" id="badge2">Only SAR 500</div>
-        <ul id="card2List">
-          <li>VAT preparation & filing</li>
-          <li>Zakat compliance & submission</li>
-          <li>Official tax submission support</li>
-        </ul>
-        <a href="https://wa.me/966598905242" target="_blank" class="btn" id="btn2">
-          Get in 500 SAR/month
-        </a>
-      </div>
-
-      <div class="pricing-card">
-        <i class="fa-solid fa-users"></i>
-        <h3 id="card3Title">Payroll</h3>
-        <div class="mini-badge" id="badge3">Only SAR 500</div>
-        <ul id="card3List" class="pricing-list">
-          <li>Monthly salary calculation</li>
-          <li>Employee record management</li>
-          <li>End-of-service benefits setup</li>
-        </ul>
-        <a href="https://wa.me/966598905242" target="_blank" class="btn" id="btn3">
-          Get in 500 SAR/month
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p id="footerText">
-      📞 Contact us via
-      <a href="https://wa.me/966598905242" target="_blank">WhatsApp</a> or email
-      <a href="mailto:info@mizaniyya.com">info@mizaniyya.com</a>
-    </p>
-    <p>© 2025 Mizaniyya | All rights reserved.</p>
-  </footer>
-
-</body>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </html>

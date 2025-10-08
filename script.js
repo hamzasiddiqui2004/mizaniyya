@@ -3,10 +3,7 @@ let isEnglish = true;
 
 langBtn.addEventListener("click", () => {
   if (isEnglish) {
-    // ✅ Arabic Mode
-    document.getElementById("title").innerText = "ميزانية | Mizaniyya";
-    document.getElementById("subtitle").innerText = "خدمات محاسبة سريعة";
-    document.getElementById("subtitle2").innerText = "خدمات محاسبة وضريبة ورواتب للشركات";
+    // ===== Arabic Mode =====
     document.getElementById("bannerTitle").innerText = "محاسبة ميسّرة وتقارير التدفقات النقدية للشركات الصغيرة";
     document.getElementById("bannerText").innerHTML = `تساعد <strong>ميزانية</strong> الشركات الصغيرة والمتاجر والمطاعم على إدارة حساباتها بسهولة — بدءًا من <strong>500 ريال / شهر*</strong>.`;
     document.getElementById("bannerTitle").style.direction = "rtl";
@@ -35,23 +32,27 @@ langBtn.addEventListener("click", () => {
       <li>إدارة بيانات الموظفين</li>
       <li>إعداد مكافأة نهاية الخدمة</li>`;
 
-    ["card1List","card2List","card3List"].forEach(id=>{
-      const ul=document.getElementById(id);
-      ul.style.textAlign="right";
-      ul.style.direction="rtl";
+    ["card1List","card2List","card3List"].forEach(id => {
+      const ul = document.getElementById(id);
+      ul.style.textAlign = "right";
+      ul.style.direction = "rtl";
     });
 
     document.getElementById("btn1").innerText = "اشترك بـ 500 ريال / شهر*";
     document.getElementById("btn2").innerText = "اشترك بـ 500 ريال / شهر*";
     document.getElementById("btn3").innerText = "اشترك بـ 500 ريال / شهر*";
 
-    document.getElementById("footerText").innerHTML = `📞 تواصل معنا عبر <a href="https://wa.me/966598905242" target="_blank">واتساب</a> أو البريد الإلكتروني <a href="mailto:info@mizaniyya.com">info@mizaniyya.com</a>`;
+    document.getElementById("footerText").innerHTML = `
+      📞 تواصل معنا عبر 
+      <a href="https://wa.me/966598905242" target="_blank">واتساب</a> 
+      أو البريد الإلكتروني 
+      <a href="mailto:info@mizaniyya.com">info@mizaniyya.com</a>`;
 
     langBtn.innerText = "English 🇬🇧";
     isEnglish = false;
 
   } else {
-    // ✅ English Mode
-    location.reload(); // सबसे आसान रीसेट 😄
+    // ===== English Mode =====
+    location.reload(); // Simple reset to English
   }
 });
