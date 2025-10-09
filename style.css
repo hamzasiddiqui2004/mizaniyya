@@ -24,7 +24,7 @@ body::before {
 
 /* HEADER */
 header {
-  background: rgba(16, 141, 99, 0.85);  /* ✅ transparent header background */
+  background: rgba(16, 141, 99, 0.600);  /* ✅ transparent header background */
   color: #fff;
   position: fixed;
   top: 0;
@@ -92,7 +92,7 @@ header {
 
 /* BANNER */
 .banner-section {
-  background: rgba(16, 141, 99, 0.85);  /* ✅ transparent banner background */
+  background: rgba(16, 141, 99, 0.700);  /* ✅ transparent banner background */
   color: white;
   padding: 50px 6.5px;
   text-align: center;
@@ -135,7 +135,7 @@ header {
 }
 
 .pricing-card {
-  background: rgba(255, 255, 255, 0.85);  /* ✅ transparent card background */
+  background: rgba(255, 255, 255, 0.500);  /* ✅ transparent card background */
   backdrop-filter: blur(4px);
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);

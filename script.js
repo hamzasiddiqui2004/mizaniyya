@@ -10,12 +10,12 @@ langBtn.addEventListener("click", () => {
 
     // 🟡 Section Title (subtitle under banner heading)
     document.getElementById("sectionTitle").innerText =
-      "احصل على محاسب محترف — فقط 500 ريال شهريًا";
+      "احصل على محاسب محترف — فقط *500 ريال شهريًا";
 
     // 🟡 Banner Text
     document.getElementById("bannerText").innerHTML = `
       <strong>ميزانية</strong> تساعدك على إدارة حسابات عملك بدون أي عناء. <br>
-      <strong>كل ذلك من راحة منزلك - ابتداءً من 500 ريال شهريًا*</strong>.
+      <strong>كل ذلك من راحة منزلك - ابتداءً من *500 ريال شهريًا</strong>.
     `;
     document.getElementById("bannerTitle").style.direction = "rtl";
     document.getElementById("bannerText").style.direction = "rtl";
@@ -27,9 +27,9 @@ langBtn.addEventListener("click", () => {
     document.getElementById("card2Title").innerText = "الزكاة والضرائب";
     document.getElementById("card3Title").innerText = "الرواتب";
 
-    document.getElementById("badge1").innerText = "فقط 500 ريال*";
-    document.getElementById("badge2").innerText = "فقط 500 ريال*";
-    document.getElementById("badge3").innerText = "فقط 500 ريال*";
+    document.getElementById("badge1").innerText = "فقط *500 ريال";
+    document.getElementById("badge2").innerText = "فقط *500 ريال";
+    document.getElementById("badge3").innerText = "فقط *500 ريال";
 
     // 🟡 Cards List Items
     document.getElementById("card1List").innerHTML = `
@@ -58,9 +58,9 @@ langBtn.addEventListener("click", () => {
     });
 
     // 🟡 Buttons
-    document.getElementById("btn1").innerText = "اشترك بـ 500 ريال / شهر";
-    document.getElementById("btn2").innerText = "اشترك بـ 500 ريال / شهر";
-    document.getElementById("btn3").innerText = "اشترك بـ 500 ريال / شهر";
+    document.getElementById("btn1").innerText = "اشترك بـ *500 ريال / شهر";
+    document.getElementById("btn2").innerText = "اشترك بـ *500 ريال / شهر";
+    document.getElementById("btn3").innerText = "اشترك بـ *500 ريال / شهر";
 
     // 🟡 Footer
     document.getElementById("footerText").innerHTML = `
