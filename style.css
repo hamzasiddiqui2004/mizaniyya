@@ -57,7 +57,7 @@ header {
 .lang-container {
   display: flex;
   align-items: center;
-  gap: 8px;
+  /* gap: 8px; */
   position: absolute;
   right: 20px;
   top: 50%;
@@ -71,10 +71,10 @@ header {
 }
 
 .lang-toggle {
-  background: #fff;
-  color: #108d63;
+  background: #ffffff00;
+  color: #ffffff;
   border: 2px solid #108d63;
-  padding: 6px 14px;
+  /* padding: 6px 14px; */
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
@@ -232,17 +232,17 @@ footer p a:hover {
     position: absolute;
     top: 0px;
     right: 0px;
-    gap: 4px;
+    /* gap: 4px; */
     transform: none;
   }
 
   .lang-toggle {
-    padding: 4px 10px;
+    /* padding: 4px 10px; */
     font-size: 12px;
   }
 
   .header-content {
     justify-content: center;
-    padding: 20px 15px;
+    /* padding: 20px 15px; */
   }
 }

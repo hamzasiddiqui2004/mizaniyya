@@ -52,7 +52,7 @@ langBtn.addEventListener("click", () => {
       أو البريد الإلكتروني 
       <a href="mailto:info@mizaniyya.com">info@mizaniyya.com</a>`;
 
-    langBtn.innerText = "English";
+    langBtn.innerText ="English";
     isEnglish = false;
   } else {
     // ===== English Mode =====
