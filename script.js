@@ -4,12 +4,16 @@ let isEnglish = true;
 langBtn.addEventListener("click", () => {
   if (isEnglish) {
     // ===== Arabic Mode =====
-    document.getElementById("bannerTitle").innerText = "محاسبة ميسّرة وتقارير التدفقات النقدية للشركات الصغيرة";
-    document.getElementById("bannerText").innerHTML = `تساعد <strong>ميزانية</strong> الشركات الصغيرة والمتاجر والمطاعم على إدارة حساباتها بسهولة — بدءًا من <strong>500 ريال / شهر*</strong>.`;
+    document.getElementById("bannerTitle").innerText =
+      "محاسبة ميسّرة وتقارير التدفقات النقدية للشركات الصغيرة";
+    document.getElementById(
+      "bannerText"
+    ).innerHTML = `تساعد <strong>ميزانية</strong> الشركات الصغيرة والمتاجر والمطاعم على إدارة حساباتها بسهولة — بدءًا من <strong>500 ريال / شهر*</strong>.`;
     document.getElementById("bannerTitle").style.direction = "rtl";
     document.getElementById("bannerText").style.direction = "rtl";
     document.getElementById("bannerText").style.textAlign = "right";
-    document.getElementById("sectionTitle").innerText = "احصل على محاسب محترف — فقط 500 ريال شهريًا*";
+    document.getElementById("sectionTitle").innerText =
+      "احصل على محاسب محترف — فقط 500 ريال شهريًا*";
 
     document.getElementById("card1Title").innerText = "المحاسبة";
     document.getElementById("card2Title").innerText = "الزكاة والضرائب";
@@ -20,19 +24,19 @@ langBtn.addEventListener("click", () => {
     document.getElementById("badge3").innerText = "فقط 500 ريال*";
 
     document.getElementById("card1List").innerHTML = `
-      <li>البيانات المالية الشهرية</li>
-      <li>تتبع التدفقات النقدية والمصروفات</li>
-      <li>تقارير الأرباح والخسائر</li>`;
+      <li><i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> البيانات المالية الشهرية</li>
+      <li> <i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> تتبع التدفقات النقدية والمصروفات</li>
+      <li> <i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> تقارير الأرباح والخسائر</li>`;
     document.getElementById("card2List").innerHTML = `
-      <li>إعداد وتقديم ضريبة القيمة المضافة</li>
-      <li>الامتثال الزكوي وتقديم الإقرارات</li>
-      <li>دعم تقديم الإقرارات الرسمية</li>`;
+      <li> <i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> إعداد وتقديم ضريبة القيمة المضافة</li>
+      <li> <i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> الامتثال الزكوي وتقديم الإقرارات</li>
+      <li> <i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> دعم تقديم الإقرارات الرسمية</li>`;
     document.getElementById("card3List").innerHTML = `
-      <li>حساب الرواتب الشهرية</li>
-      <li>إدارة بيانات الموظفين</li>
-      <li>إعداد مكافأة نهاية الخدمة</li>`;
+      <li> <i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> حساب الرواتب الشهرية</li>
+      <li> <i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> إدارة بيانات الموظفين</li>
+      <li> <i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> إعداد مكافأة نهاية الخدمة</li>`;
 
-    ["card1List","card2List","card3List"].forEach(id => {
+    ["card1List", "card2List", "card3List"].forEach((id) => {
       const ul = document.getElementById(id);
       ul.style.textAlign = "right";
       ul.style.direction = "rtl";
@@ -50,7 +54,6 @@ langBtn.addEventListener("click", () => {
 
     langBtn.innerText = "English 🇬🇧";
     isEnglish = false;
-
   } else {
     // ===== English Mode =====
     location.reload(); // Simple reset to English
