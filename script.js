@@ -8,20 +8,20 @@ langBtn.addEventListener("click", () => {
       "محاسبة ميسّرة وتقارير التدفقات النقدية للشركات الصغيرة";
     document.getElementById(
       "bannerText"
-    ).innerHTML = `تساعد <strong>ميزانية</strong> الشركات الصغيرة والمتاجر والمطاعم على إدارة حساباتها بسهولة — بدءًا من <strong>500 ريال / شهر*</strong>.`;
+    ).innerHTML = `تساعد <strong>ميزانية</strong> الشركات الصغيرة والمتاجر والمطاعم على إدارة حساباتها بسهولة — بدءًا من <strong>*500 ريال / شهر</strong>.`;
     document.getElementById("bannerTitle").style.direction = "rtl";
     document.getElementById("bannerText").style.direction = "rtl";
     document.getElementById("bannerText").style.textAlign = "right";
     document.getElementById("sectionTitle").innerText =
-      "احصل على محاسب محترف — فقط 500 ريال شهريًا*";
+      "احصل على محاسب محترف — فقط *500 ريال شهريًا";
 
     document.getElementById("card1Title").innerText = "المحاسبة";
     document.getElementById("card2Title").innerText = "الزكاة والضرائب";
     document.getElementById("card3Title").innerText = "الرواتب";
 
-    document.getElementById("badge1").innerText = "فقط 500 ريال*";
-    document.getElementById("badge2").innerText = "فقط 500 ريال*";
-    document.getElementById("badge3").innerText = "فقط 500 ريال*";
+    document.getElementById("badge1").innerText = "فقط *500 ريال";
+    document.getElementById("badge2").innerText = "فقط *500 ريال";
+    document.getElementById("badge3").innerText = "فقط *500 ريال";
 
     document.getElementById("card1List").innerHTML = `
       <li><i class="fas fa-star" style="color: #ffd700; margin-right: 6px; font-size: small"></i> البيانات المالية الشهرية</li>
@@ -42,9 +42,9 @@ langBtn.addEventListener("click", () => {
       ul.style.direction = "rtl";
     });
 
-    document.getElementById("btn1").innerText = "اشترك بـ 500 ريال / شهر*";
-    document.getElementById("btn2").innerText = "اشترك بـ 500 ريال / شهر*";
-    document.getElementById("btn3").innerText = "اشترك بـ 500 ريال / شهر*";
+    document.getElementById("btn1").innerText = "اشترك بـ *500 ريال / شهر";
+    document.getElementById("btn2").innerText = "اشترك بـ *500 ريال / شهر";
+    document.getElementById("btn3").innerText = "اشترك بـ *500 ريال / شهر";
 
     document.getElementById("footerText").innerHTML = `
       📞 تواصل معنا عبر 
