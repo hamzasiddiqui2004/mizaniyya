@@ -7,6 +7,7 @@ body {
     no-repeat center center fixed;
   background-size: cover;
   transition: all 0.3s ease;
+  padding-top: 120px; /* ✅ push content down below fixed header */
 }
 
 body::before {
@@ -23,17 +24,22 @@ body::before {
 
 /* HEADER */
 header {
-  background: #108d63;
+  background: rgba(16, 141, 99, 0.85);  /* ✅ transparent header background */
   color: #fff;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 15px 20px;
+  backdrop-filter: blur(6px); /* ✨ glass effect */
 }
 
 .header-content {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: center; /* logo centered */
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -53,15 +59,14 @@ header {
   transform: scale(1.05);
 }
 
-/* Language Button */
+/* LANGUAGE BUTTON */
 .lang-container {
   display: flex;
   align-items: center;
-  /* gap: 8px; */
   position: absolute;
   right: 20px;
   top: 50%;
-  transform: translateY(-50%); /* center vertically with header */
+  transform: translateY(-50%);
 }
 
 .lang-label {
@@ -71,25 +76,23 @@ header {
 }
 
 .lang-toggle {
-  background: #ffffff00;
+  background: transparent;
   color: #ffffff;
-  border: 2px solid #108d63;
-  /* padding: 6px 14px; */
-  border-radius: 8px;
+  border:none;
+  /* border-radius: 8px; */
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .lang-toggle:hover {
-  background: #108d63;
+  /* background: #108d63; */
   color: #fff;
 }
 
 /* BANNER */
 .banner-section {
-  /* position: relative; */
-  background-color: #108d63;
+  background: rgba(16, 141, 99, 0.85);  /* ✅ transparent banner background */
   color: white;
   padding: 50px 6.5px;
   text-align: center;
@@ -99,8 +102,8 @@ header {
   max-width: 1100px;
   overflow: hidden;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px); /* ✨ subtle glass effect */
 }
-
 
 @keyframes borderMotion {
   0% { background-position: 0% 50%; }
@@ -132,7 +135,8 @@ header {
 }
 
 .pricing-card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.85);  /* ✅ transparent card background */
+  backdrop-filter: blur(4px);
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
@@ -198,11 +202,11 @@ header {
   background: #0c724f;
 }
 
+/* FOOTER */
 #footerText {
   color: #fff;
 }
 
-/* FOOTER */
 footer {
   background: #0a5e43;
   color: #fff;
@@ -227,22 +231,27 @@ footer p a:hover {
     width: 100px;
   }
 
-  /* Language button top-right, smaller size */
   .lang-container {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    /* gap: 4px; */
+    top: 8px;
+    right: 28px;
     transform: none;
   }
 
   .lang-toggle {
-    /* padding: 4px 10px; */
+    padding: 4px 10px;
     font-size: 12px;
   }
 
   .header-content {
     justify-content: center;
-    /* padding: 20px 15px; */
+  }
+
+  .banner-heading {
+    font-size: 1.6rem;
+  }
+
+  .banner-text {
+    font-size: 1rem;
   }
 }
