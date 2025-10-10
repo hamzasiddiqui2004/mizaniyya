@@ -9,25 +9,25 @@ langBtn.addEventListener("click", () => {
     htmlTag.setAttribute("lang", "ar");
     htmlTag.setAttribute("dir", "rtl");
 
-    // 🟡 Banner
-    document.getElementById("bannerTitle").innerText =
-      "محاسبة ميسّرة، الضرائب والرواتب بأسعار مناسبة";
-    document.getElementById("sectionTitle").innerText =
-      "احصل على محاسب محترف — فقط *500 ريال شهريًا";
-  document.getElementById("bannerText").innerHTML = `
-  <strong>ميزانية</strong> تساعدك على إدارة حسابات عملك بدون أي عناء. <br>
-  <span style="color: #ffd700; font-weight: bold;">
-    كل ذلك من راحة منزلك - ابتداءً من *500 ريال شهريًا.
-  </span>
-`;
+    // 🟡 Banner (Arabic Only)
+    document.getElementById("bannerTitle").innerHTML = `
+      خدمات المحاسبة والرواتب والضرائب المهنية —
+      <span >ابتداءً من ٥٠٠ ر.س / شهريًا</span><br>
+      أدر أعمالك المالية بسهولة — بدون ضغوط أو تكاليف مرتفعة<br>
+      مثالي للمحلات والمطاعم والأعمال الصغيرة<br><br>
+      <span class="cta-heading">ابدأ الآن</span><br>
+      اضغط على <span class="whatsapp-text">واتساب</span> واحصل على تقاريرك الشهرية — بسرعة ودقة!
+    `;
+    const bannerTitle = document.getElementById("bannerTitle");
+    bannerTitle.style.textAlign = "center";
+    bannerTitle.style.direction = "rtl";
 
-
-    // ✅ Center Arabic banner text
-    document.getElementById("bannerTitle").style.textAlign = "center";
-    document.getElementById("sectionTitle").style.textAlign = "center";
+    // 🟡 Banner Text हटाना ताकि English न दिखे
     const bannerText = document.getElementById("bannerText");
-    bannerText.style.textAlign = "center";
-    bannerText.style.direction = "rtl";
+    if (bannerText) {
+      bannerText.innerHTML = "";
+      bannerText.style.display = "none";
+    }
 
     // 🟡 Cards
     document.getElementById("card1Title").innerText = "المحاسبة";
@@ -73,13 +73,12 @@ langBtn.addEventListener("click", () => {
       <a href="mailto:info@mizaniyya.com"><i class="fas fa-envelope"></i> info@mizaniyya.com</a>
     `;
 
-    // Switch button text
     langBtn.innerText = "English";
     isEnglish = false;
   } else {
     // ===== English Mode =====
     htmlTag.setAttribute("lang", "en");
     htmlTag.setAttribute("dir", "ltr");
-    location.reload();
+    location.reload(); // English वापस लाने के लिए reload
   }
 });
