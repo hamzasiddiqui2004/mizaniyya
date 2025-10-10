@@ -11,13 +11,13 @@ langBtn.addEventListener("click", () => {
 
     // 🟡 Banner (Arabic Only)
     document.getElementById("bannerTitle").innerHTML = `
-      خدمات المحاسبة والرواتب والضرائب المهنية —
-      <span >ابتداءً من ٥٠٠ ر.س / شهريًا</span><br>
-      أدر أعمالك المالية بسهولة — بدون ضغوط أو تكاليف مرتفعة<br>
-      مثالي للمحلات والمطاعم والأعمال الصغيرة<br><br>
+     <h1 class="banner-heading">خدمات المحاسبة والرواتب والضرائب المهنية —
+      ابتداءً من ٥٠٠ ر.س / شهريًا</h1>
+      <p class="banner-text">أدر أعمالك المالية بسهولة — بدون ضغوط أو تكاليف مرتفعة<br>
+      مثالي للمحلات والمطاعم والأعمال الصغيرة<br>
       <span class="cta-heading">ابدأ الآن</span><br>
-      اضغط على <span class="whatsapp-text">واتساب</span> واحصل على تقاريرك الشهرية — بسرعة ودقة!
-    `;
+      اضغط على <a href="https://wa.me/966598905242" style="text-decoration: none;" target="_blank"><span class="whatsapp-text"><i class="fab fa-whatsapp whatsapp-text" style="padding: 4px;"></i>واتساب</span><a/> واحصل على تقاريرك الشهرية — بسرعة ودقة!
+</p>    `;
     const bannerTitle = document.getElementById("bannerTitle");
     bannerTitle.style.textAlign = "center";
     bannerTitle.style.direction = "rtl";
