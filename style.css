@@ -24,7 +24,7 @@ body::before {
 
 /* HEADER */
 header {
-  background: rgba(16, 141, 99, 0.600);  /* ✅ transparent header background */
+  background: rgba(16, 141, 99, 0.6); /* ✅ transparent header background */
   color: #fff;
   position: fixed;
   top: 0;
@@ -78,23 +78,21 @@ header {
 .lang-toggle {
   background: transparent;
   color: #ffffff;
-  border:none;
-  /* border-radius: 8px; */
+  border: none;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .lang-toggle:hover {
-  /* background: #108d63; */
   color: #fff;
 }
 
 /* BANNER */
 .banner-section {
-  background: rgba(16, 141, 99, 0.700);  /* ✅ transparent banner background */
+  background: rgba(16, 141, 99, 0.6); /* ✅ transparent banner background */
   color: white;
-  padding: 50px 6.5px;
+  padding: 50px 5px;
   text-align: center;
   border-radius: 16px;
   margin: 6% auto;
@@ -105,24 +103,49 @@ header {
   backdrop-filter: blur(6px); /* ✨ subtle glass effect */
 }
 
-@keyframes borderMotion {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 .banner-heading {
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 15px;
-  line-height: 1.3;
+  /* margin-bottom: 15px;  */
+  /* line-height: 1.4; */
 }
 
 .banner-text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  /* font-weight: 700; */
   max-width: 750px;
   margin: 0 auto;
-  line-height: 1.6;
+  /* line-height: 1.8; */
+}
+
+/* ✅ Banner Special Styles */
+.highlight {
+  color: #ffd700; /* Gold highlight */
+  font-weight: 600;
+}
+
+.cta-heading {
+  color: #3b4cd9; /* Blue CTA */
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: inline-block;
+  /* margin-top: 5px; */
+}
+
+.whatsapp-text {
+  color: #25d366; /* WhatsApp Green */
+  font-weight: 600;
+}
+.whatsapp-text:hover {
+  cursor: pointer;
+}
+
+.banner-divider {
+  margin: 25px auto;
+  width: 70%;
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 /* PRICING */
@@ -135,7 +158,7 @@ header {
 }
 
 .pricing-card {
-  background: rgba(255, 255, 255, 0.500);  /* ✅ transparent card background */
+  background: rgba(255, 255, 255, 0.5); /* ✅ transparent card background */
   backdrop-filter: blur(4px);
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -253,5 +276,6 @@ footer p a:hover {
 
   .banner-text {
     font-size: 1rem;
+    line-height: 1.6;
   }
 }
