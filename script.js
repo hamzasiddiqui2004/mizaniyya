@@ -15,8 +15,8 @@ langBtn.addEventListener("click", () => {
       ابتداءً من ٥٠٠ ر.س / شهريًا</h1>
       <p class="banner-text">أدر أعمالك المالية بسهولة — بدون ضغوط أو تكاليف مرتفعة<br>
       مثالي للمحلات والمطاعم والأعمال الصغيرة<br>
-      <span class="cta-heading">ابدأ الآن</span><br>
-      اضغط على <a href="https://wa.me/966598905242" style="text-decoration: none;" target="_blank"><span class="whatsapp-text"><i class="fab fa-whatsapp whatsapp-text" style="padding: 4px;"></i>واتساب</span><a/> واحصل على تقاريرك الشهرية — بسرعة ودقة!
+      <span class="cta-heading" style="font-size:2rem; font-weight:900;">ابدأ الآن</span><br>
+      اضغط على <a href="https://wa.me/966598905242" style="text-decoration: none;" target="_blank"><span class="whatsapp-text" style="font-size:2rem; font-weight:900;"><i class="fab fa-whatsapp whatsapp-text" style="padding: 4px;"></i>واتساب</span><a/> واحصل على تقاريرك الشهرية — بسرعة ودقة!
 </p>    `;
     const bannerTitle = document.getElementById("bannerTitle");
     bannerTitle.style.textAlign = "center";
@@ -30,28 +30,28 @@ langBtn.addEventListener("click", () => {
     }
 
     // 🟡 Cards
-    document.getElementById("card1Title").innerText = "المحاسبة";
-    document.getElementById("card2Title").innerText = "الزكاة والضرائب";
-    document.getElementById("card3Title").innerText = "الرواتب";
+    document.getElementById("card1Title").innerHTML = `<span style="font-size:1.6rem; font-weight:700;">المحاسبة</span>`;
+    document.getElementById("card2Title").innerHTML = `<span style="font-size:1.6rem; font-weight:700;">الزكاة والضرائب</span>`;
+    document.getElementById("card3Title").innerHTML = `<span style="font-size:1.6rem; font-weight:700;">الرواتب</span>`;
 
     document.getElementById("badge1").innerText = "فقط *500 ريال";
     document.getElementById("badge2").innerText = "فقط *500 ريال";
     document.getElementById("badge3").innerText = "فقط *500 ريال";
 
     document.getElementById("card1List").innerHTML = `
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> البيانات المالية الشهرية</li>
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> تتبع التدفقات النقدية والمصروفات</li>
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> تقارير الأرباح والخسائر</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> البيانات المالية الشهرية</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> تتبع التدفقات النقدية والمصروفات</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> تقارير الأرباح والخسائر</li>
     `;
     document.getElementById("card2List").innerHTML = `
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> إعداد وتقديم ضريبة القيمة المضافة</li>
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> الامتثال الزكوي وتقديم الإقرارات</li>
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> دعم تقديم الإقرارات الرسمية</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> إعداد وتقديم ضريبة القيمة المضافة</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> الامتثال الزكوي وتقديم الإقرارات</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> دعم تقديم الإقرارات الرسمية</li>
     `;
     document.getElementById("card3List").innerHTML = `
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> حساب الرواتب الشهرية</li>
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> إدارة بيانات الموظفين</li>
-      <li><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> إعداد مكافأة نهاية الخدمة</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> حساب الرواتب الشهرية</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> إدارة بيانات الموظفين</li>
+      <li style="font-size:1.2rem;"><i class="fas fa-star" style="color: #ffd700; margin-left: 6px; font-size: small"></i> إعداد مكافأة نهاية الخدمة</li>
     `;
 
     ["card1List", "card2List", "card3List"].forEach((id) => {
