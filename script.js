@@ -15,7 +15,7 @@ langBtn.addEventListener("click", () => {
       ابتداءً من ٥٠٠ ر.س / شهريًا</h1>
       <p class="banner-text">أدر أعمالك المالية بسهولة — بدون ضغوط أو تكاليف مرتفعة<br>
       مثالي للمحلات والمطاعم والأعمال الصغيرة<br>
-      <span class="cta-heading" style="font-size:2rem; font-weight:900;">ابدأ الآن</span><br>
+      <span class="cta-heading" style="font-size:2rem; font-weight:900;padding-top:10px;">ابدأ الآن</span><br>
       اضغط على <a href="https://wa.me/966598905242" style="text-decoration: none;" target="_blank"><span class="whatsapp-text" style="font-size:2rem; font-weight:900;"><i class="fab fa-whatsapp whatsapp-text" style="padding: 4px;"></i>واتساب</span><a/> واحصل على تقاريرك الشهرية — بسرعة ودقة!
 </p>    `;
     const bannerTitle = document.getElementById("bannerTitle");
