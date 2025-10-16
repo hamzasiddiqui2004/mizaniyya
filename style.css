@@ -50,7 +50,7 @@
     }
 
     .site-logo {
-      width: 130px;
+      width: 350px;
       height: auto;
       object-fit: contain;
       transition: transform 0.3s ease;
