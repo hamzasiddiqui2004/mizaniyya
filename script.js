@@ -68,7 +68,7 @@ langBtn.addEventListener("click", () => {
     // 🟡 Footer
     document.getElementById("footerText").innerHTML = `
       📞 تواصل معنا عبر 
-      <a href="https://wa.me/966500226253" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a> 
+      <a href="https://wa.me/966500226253" target="_blank"><i class="fab fa-whatsapp"></i> 6253 022 50 966+ </a> 
       أو البريد الإلكتروني 
       <a href="mailto:info@mizaniyya.com"><i class="fas fa-envelope"></i> info@mizaniyya.com</a>
     `;
