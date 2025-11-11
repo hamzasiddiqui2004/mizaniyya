@@ -16,7 +16,7 @@ langBtn.addEventListener("click", () => {
       <p class="banner-text">أدر أعمالك المالية بسهولة — بدون ضغوط أو تكاليف مرتفعة<br>
       مثالي للمحلات والمطاعم والأعمال الصغيرة<br>
       <span class="cta-heading" style="font-size:2rem; font-weight:900;padding-top:10px;">ابدأ الآن</span><br>
-      اضغط على <a href="https://wa.me/966598905242" style="text-decoration: none;" target="_blank"><span class="whatsapp-text" style="font-size:2rem; font-weight:900;"><i class="fab fa-whatsapp whatsapp-text" style="padding: 4px;"></i>واتساب</span><a/> واحصل على تقاريرك الشهرية — بسرعة ودقة!
+      اضغط على <a href="https://wa.me/966500226253" style="text-decoration: none;" target="_blank"><span class="whatsapp-text" style="font-size:2rem; font-weight:900;"><i class="fab fa-whatsapp whatsapp-text" style="padding: 4px;"></i>واتساب</span><a/> واحصل على تقاريرك الشهرية — بسرعة ودقة!
 </p>    `;
     const bannerTitle = document.getElementById("bannerTitle");
     bannerTitle.style.textAlign = "center";
@@ -68,7 +68,7 @@ langBtn.addEventListener("click", () => {
     // 🟡 Footer
     document.getElementById("footerText").innerHTML = `
       📞 تواصل معنا عبر 
-      <a href="https://wa.me/966598905242" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a> 
+      <a href="https://wa.me/966500226253" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a> 
       أو البريد الإلكتروني 
       <a href="mailto:info@mizaniyya.com"><i class="fas fa-envelope"></i> info@mizaniyya.com</a>
     `;
