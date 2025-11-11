@@ -73,7 +73,7 @@ langBtn.addEventListener("click", () => {
       <a href="mailto:info@mizaniyya.com"><i class="fas fa-envelope"></i> info@mizaniyya.com</a>
     `;
 
-    langBtn.innerText = "English";
+    langBtn.innerText = "English"; 
     isEnglish = false;
   } else {
     // ===== English Mode =====
